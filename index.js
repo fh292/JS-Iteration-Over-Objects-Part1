@@ -63,8 +63,13 @@ const movies = [
       Q4) Create a function that accepts an array of objects called 'movies' 
   and iterates through it to print the titles of all the movies.
   ********************************/
-const moviesTitles = movies.map((movie) => movie.title);
-console.log(moviesTitles);
+
+const movieTitles = (movies) => {
+  return movies.forEach((movie) => {
+    console.log(movie.title);
+  });
+};
+movieTitles(movies);
 
 /******************************
       Q5) Create a function that accepts an array of objects called 'movies' 
